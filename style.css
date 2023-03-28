@@ -1,7 +1,46 @@
-body{
-    background-image: url("pexels-spencer-lind-1331750.jpg");
-    background-repeat: no-repeat;
+body {
+    background: url("pexels-spencer-lind-1331750.jpg") no-repeat fixed center;
     background-size: cover;
-    min-height: 100%;
-    min-width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    overflow: hidden;
+}
+
+.header-list li {
+    float: left;
+}
+
+.header-list li a {
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    font-size: 20px;
+}
+
+.header-list li a:not(.active){
+    color: #B16713;
+}
+
+.header-list li a:hover:not(.active){
+    background-color: #0f0f0f;
+}
+
+.active{
+    color: white;
+    background-color: #92550F;
+}
+
+.about-link {
+    margin-left: auto;
 }
