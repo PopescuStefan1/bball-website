@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basketball</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,7 +16,8 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="parallax" style="height: 400px;"></div>
+    <div id="header">
         <ul class="header-list">
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="news.html">News</a></li>
@@ -26,11 +27,18 @@
         </ul>
     </div>
 
-    <div class="parallax">
+    <div class="parallax content">
         <img class="basketball-img" src="basketball-basket-png-39939.png" alt="basketball">
     </div>
 
-    <div style="height:1000px;background-color:red;font-size:36px"></div>
+    <div class="home-text">
+        <p style="margin: 0;">Baschetul este unul dintre cele mai răspândite sporturi de echipă din lume; se
+            caracterizează prin finețea, precizia și fantezia exercițiilor tehnice și tactice, prin talia înaltă și
+            calitățile fizice deosebite ale sportivilor, toate acestea implicate într-o luptă sportivă care pretinde
+            spirit de echipă și de sacrificiu, inteligență și rezistență nervoasă.</p>
+    </div>
+
+    <div class="parallax"></div>
 </body>
 
 </html>
