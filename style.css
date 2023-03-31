@@ -1,8 +1,12 @@
 body {
-    background: url("pexels-spencer-lind-1331750.jpg") no-repeat fixed center;
     background-size: cover;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+body,
+html {
+    height: 100%;
 }
 
 .header {
@@ -28,19 +32,38 @@ body {
     font-size: 20px;
 }
 
-.header-list li a:not(.active){
+.header-list li a:not(.active) {
     color: #B16713;
 }
 
-.header-list li a:hover:not(.active){
+.header-list li a:hover:not(.active) {
     background-color: #0f0f0f;
 }
 
-.active{
+.active {
     color: white;
     background-color: #92550F;
 }
 
 .about-link {
     margin-left: auto;
+}
+
+.basketball-img {
+    height: 220px;
+    width: 220px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('pexels-spencer-lind-1331750.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
