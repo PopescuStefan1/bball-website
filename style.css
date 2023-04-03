@@ -15,11 +15,22 @@ html {
     height: 100%;
 }
 
+footer {
+    text-align: center;
+    background-color: #92550F;
+    margin: 0;
+    padding: 18px;
+    color: lightslategray;
+}
+
+p {
+    margin: 0;
+}
+
 #header {
     width: 100%;
     overflow: hidden;
     background-color: #1f1f1f;
-    overflow: hidden;
 }
 
 .header-list {
@@ -65,6 +76,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
@@ -114,6 +126,6 @@ html {
     color: white;
 }
 
-.home-polygon{
+.home-polygon {
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
 }
