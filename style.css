@@ -1,3 +1,9 @@
+html {
+    --scrollbar-height: 3px;
+    --scrollbar-bg: #ddd;
+    --scrollbar-progress-color: #B16713;
+}
+
 body {
     background-size: cover;
     margin: 0;
@@ -85,20 +91,29 @@ html {
     background-size: cover;
 }
 
+.parallax-2 {
+    /* The image used */
+    background-image: url('oleksii-s-O2kqxbix4Mw-unsplash.jpg');
+
+    /* Full height */
+    height: fit-content;
+    height: 70%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .home-text {
     background-color: #B16713;
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 500;
     padding: 240px;
     color: white;
 }
 
-.home-text-slanted{
-    font-size: 48px;
-    font-weight: 700;
-    padding: 240px;
-    color: white;
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 85%);
-    padding: 240px;
-    background-color: #B16713;
+.home-polygon{
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
 }
