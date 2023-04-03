@@ -7,27 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basketball</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
         rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div style="height: 125px; background-color: black;"></div>
+    <div class="header">
+        <img src="basketball-basket-png-39939.png" alt="" style="height:64px;">
+        <a href="index.html"><p>&MediumSpace;BASKETBALL&MediumSpace;</p></a>
+        <img src="basketball-basket-png-39939.png" alt="" style="height:64px;">
+    </div>
     <div id="navbar">
-        <ul class="navbar-list">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="images.html">Images</a></li>
-            <li><a href="player.html">Player of the Day</a></li>
-            <li class="about-link"><a href="about.html">About</a></li>
-        </ul>
+        <div class="navbar-list-div">
+            <ul class="navbar-list">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="images.html">Images</a></li>
+                <li><a href="player.html">Player of the Day</a></li>
+                <li class="about-link"><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div id="scrollbar"></div>
     </div>
 
-    <div class="parallax content">
+    <div class="parallax content empty">
         <img class="basketball-img" src="basketball-basket-png-39939.png" alt="basketball">
     </div>
 
@@ -41,13 +48,15 @@
         </div>
     </div>
 
-    <div class="parallax-2"></div>
+    <div class="parallax-2 empty"></div>
 
-    <div class="home-text">
-        <p style="margin: 0;">Punctele sunt marcate prin aruncarea mingii în coș; echipa care acumulează mai multe
-            puncte la sfârșitul jocului câștigă. Mingea poate fi făcută să înainteze pe teren prin driblare sau
-            pasând-o altor coechipieri. Actele fizice nesportive (fault) sunt penalizate și există restricții asupra
-            modului în care este folosită mingea (încălcări).</p>
+    <div class="parallax-2">
+        <div class="home-text home-arrow">
+            <p style="margin: 0;">Punctele sunt marcate prin aruncarea mingii în coș; echipa care acumulează mai multe
+                puncte la sfârșitul jocului câștigă. Mingea poate fi făcută să înainteze pe teren prin driblare sau
+                pasând-o altor coechipieri. Actele fizice nesportive (fault) sunt penalizate și există restricții asupra
+                modului în care este folosită mingea (încălcări).</p>
+        </div>
     </div>
 
     <footer>
