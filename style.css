@@ -1,13 +1,29 @@
 html {
+    --header-size: 125px;
+    --navbar-size: 48px;
     --scrollbar-height: 3px;
     --scrollbar-bg: #ddd;
-    --scrollbar-progress-color: #B16713;
+    --scrollbar-progress-color: #92550F;
 }
 
 body {
-    background-size: cover;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right top,
+            var(--scrollbar-progress-color) 50%,
+            var(--scrollbar-bg) 50%);
+    background-size: 100% calc(100% - 100vh + var(--header-size) + var(--scrollbar-height) + 1px);
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: calc(var(--header-size) + var(--scrollbar-height));
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    background: white;
 }
 
 body,
@@ -27,34 +43,36 @@ p {
     margin: 0;
 }
 
-#header {
+#navbar {
     width: 100%;
     overflow: hidden;
     background-color: #1f1f1f;
+    margin-bottom: 3px;
+    height: var(--navbar-size);
 }
 
-.header-list {
+.navbar-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.header-list li {
+.navbar-list li {
     float: left;
 }
 
-.header-list li a {
+.navbar-list li a {
     text-decoration: none;
     display: block;
     padding: 12px;
     font-size: 20px;
 }
 
-.header-list li a:not(.active) {
+.navbar-list li a:not(.active) {
     color: #B16713;
 }
 
-.header-list li a:hover:not(.active) {
+.navbar-list li a:hover:not(.active) {
     background-color: #0f0f0f;
 }
 
