@@ -37,6 +37,11 @@ p {
 
 .header a {
     color: #B16713;
+    transition: 0.5s;
+}
+
+.header a:hover{
+    color: #92550F;
 }
 
 #navbar {
@@ -66,6 +71,7 @@ p {
     display: block;
     padding: 12px;
     font-size: 20px;
+    transition: 0.3s;
 }
 
 .navbar-list li a:not(.active) {
