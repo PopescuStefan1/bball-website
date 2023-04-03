@@ -4,6 +4,22 @@ window.onscroll = function () { myFunction() };
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
+const headerLink = document.querySelector(".header > a");
+headerLink.onmouseover = function () { ballBounce() };
+headerLink.onmouseleave = function () { ballStopBounce() };
+
+// Adds bounce on hover
+function ballBounce() {
+    balls = headerLink.children;
+    balls[0].classList.add("fa-bounce");
+    balls[1].classList.add("fa-bounce");
+}
+function ballStopBounce() {
+    balls = headerLink.children;
+    balls[0].classList.remove("fa-bounce");
+    balls[1].classList.remove("fa-bounce");
+}
+
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
     if (window.pageYOffset >= sticky) {

@@ -36,12 +36,12 @@ p {
 }
 
 .header a {
-    color: #B16713;
+    color: #92550F;
     transition: 0.5s;
 }
 
-.header a:hover{
-    color: #92550F;
+.header a:hover {
+    color: #B16713;
 }
 
 #navbar {
