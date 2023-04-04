@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #040303;
+    --secondary-color: #461111;
+    --accent-color: #B3541E;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -10,7 +16,7 @@ html {
 
 footer {
     text-align: center;
-    background-color: #92550F;
+    background-color: var(--secondary-color);
     margin: 0;
     padding: 18px;
     color: #ddd;
@@ -26,7 +32,7 @@ p {
 
 .header {
     height: 100px;
-    background-color: #1f1f1f;
+    background-color: var(--primary-color);
     color: #B16713;
     display: flex;
     align-items: center;
@@ -53,7 +59,7 @@ p {
 }
 
 .navbar-list-div {
-    background-color: #1f1f1f;
+    background-color: var(--primary-color);
     padding: 0;
 }
 
@@ -72,19 +78,15 @@ p {
     padding: 12px;
     font-size: 20px;
     transition: 0.3s;
-}
-
-.navbar-list li a:not(.active) {
-    color: #B16713;
+    color: white;
 }
 
 .navbar-list li a:hover:not(.active) {
-    background-color: #0f0f0f;
+    background-color: var(--secondary-color);
 }
 
 .active {
-    color: white;
-    background-color: #92550F;
+    border-top: 2px solid var(--accent-color);
 }
 
 .about-link {
@@ -110,7 +112,7 @@ p {
 
 #scrollbar {
     height: 3px;
-    background: #92550F;
+    background: var(--accent-color);
     width: 0%;
 }
 
@@ -127,12 +129,12 @@ p {
     background-size: cover;
 }
 
-.first-par{
+.first-par {
     background-image: url('pexels-spencer-lind-1331750.jpg');
 }
 
-.second-par{
-    background-image: url('oleksii-s-O2kqxbix4Mw-unsplash.jpg');
+.second-par {
+    background-image: url('joshua-kantarges-N_7Kb4hpaoU-unsplash.jpg');
 }
 
 .empty {
@@ -140,7 +142,7 @@ p {
 }
 
 .home-text {
-    background-color: #B16713;
+    background-color: var(--primary-color);
     font-size: 40px;
     font-weight: 500;
     padding: 240px 340px;
@@ -152,5 +154,5 @@ p {
 }
 
 .home-arrow {
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 10% 50%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
