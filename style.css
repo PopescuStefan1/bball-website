@@ -113,7 +113,7 @@ p {
 }
 
 .content {
-    padding: 16px;
+    padding-top: 16px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -146,6 +146,8 @@ p {
     background-position: 50% 0%;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 120vh;
+    position: relative;
 }
 
 .first-par {
@@ -157,26 +159,92 @@ p {
 }
 
 .empty {
-    height: 70%;
+    height: 100vh;
 }
 
 .home-text {
     background-color: var(--primary-color);
     font-size: 40px;
     font-weight: 500;
-    padding: 240px 340px;
     color: white;
+    padding: 0 20vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.home-polygon {
+/* .home-polygon {
     clip-path: polygon(25% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
 }
 
 .home-arrow {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0%);
-}
+} */
 
 .placeholder {
     height: 2000px;
     background-color: var(--primary-color);
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waves svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.waves .shape-fill {
+    fill: #443737;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.wave .shape-fill {
+    fill: #443737;
+}
+
+.book {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.book svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.book .shape-fill {
+    fill: #443737;
 }
