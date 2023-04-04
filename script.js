@@ -37,4 +37,13 @@ function scrollIndicator() {
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     document.getElementById('scrollbar').style.width = scrolled + "%";
+
+    const parallaxes = document.querySelectorAll('.parallax');
+    for (const parallax of parallaxes) {
+        if (parallax.classList.contains('first-par')) {
+            parallax.style.backgroundPosition = `50% ${scrolled * 2}%`;
+        } else {
+            parallax.style.backgroundPosition = `50% ${scrolled}%`;
+        }
+    }
 }

@@ -120,25 +120,19 @@ p {
 }
 
 .parallax {
-    /* The image used */
-    background-image: url('pexels-spencer-lind-1331750.jpg');
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: 50% 0%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.parallax-2 {
-    /* The image used */
-    background-image: url('oleksii-s-O2kqxbix4Mw-unsplash.jpg');
+.first-par{
+    background-image: url('pexels-spencer-lind-1331750.jpg');
+}
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.second-par{
+    background-image: url('oleksii-s-O2kqxbix4Mw-unsplash.jpg');
 }
 
 .empty {
