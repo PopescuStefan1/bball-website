@@ -2,17 +2,15 @@
     --primary-color: #443737;
     --secondary-color: #272121;
     --accent-color: #ff4d00;
-    --accent-color-semi-transparent: #ff4d0088;
+    --accent-faded: #ff4d0022;
+    --header-height: 100px;
+    --navbar-height: 53px;
+    --footer-height: 74px;
 }
 
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-}
-
-body,
-html {
-    height: 100%;
 }
 
 footer {
@@ -21,6 +19,8 @@ footer {
     margin: 0;
     padding: 18px;
     color: #bbb;
+    height: var(--footer-height);
+    box-sizing: border-box;
 }
 
 a {
@@ -32,7 +32,8 @@ p {
 }
 
 .header {
-    height: 100px;
+    height: var(--header-height);
+    box-sizing: border-box;
     background-color: var(--secondary-color);
     color: #B16713;
     display: flex;
@@ -57,6 +58,8 @@ p {
     display: flex;
     flex-direction: column;
     background-color: #ddd;
+    height: var(--navbar-height);
+    box-sizing: border-box;
 }
 
 .navbar-list-div {
@@ -182,11 +185,6 @@ p {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0%);
 } */
 
-.placeholder {
-    height: 2000px;
-    background-color: var(--primary-color);
-}
-
 .waves {
     position: absolute;
     bottom: 0;
@@ -247,4 +245,50 @@ p {
 
 .book .shape-fill {
     fill: #443737;
+}
+
+.matches-body {
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.matches-content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 940px;
+    width: calc(100% - 20px);
+    gap: 16px;
+}
+
+.card {
+    height: 260px;
+    width: 300px;
+    background-color: #27212122;
+    border-radius: 10px;
+    border: 1px solid #27212177;
+    cursor: pointer;
+    position: relative;
+}
+
+.card::before {
+    background: radial-gradient(800px circle at 100px 100px,
+            var(--accent-faded),
+            transparent 40%);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-radius: inherit;
+    content: "";
+    z-index: 2;
 }
