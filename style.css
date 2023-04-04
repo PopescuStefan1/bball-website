@@ -1,7 +1,8 @@
 :root {
     --primary-color: #272121;
     --secondary-color: #443737;
-    --accent-color: #FF4D00;
+    --accent-color: #ff4d00;
+    --accent-color-semi-transparent: #ff4d0088;
 }
 
 body {
@@ -93,7 +94,7 @@ p {
 }
 
 .navbar-list:has(a:not(.active):hover) li .active {
-    border-top: 2px solid transparent;
+    border-top: 2px solid var(--accent-color-semi-transparent);
 }
 
 .active {
