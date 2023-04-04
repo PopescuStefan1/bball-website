@@ -79,6 +79,7 @@ p {
     padding: 12px;
     font-size: 20px;
     transition: 0.3s;
+    transition-timing-function: ease-in-out;
     color: white;
 }
 
@@ -89,6 +90,10 @@ p {
 .navbar-list li a:hover {
     background-color: var(--secondary-color);
     border-top: 2px solid var(--accent-color);
+}
+
+.navbar-list:has(a:not(.active):hover) li .active {
+    border-top: 2px solid transparent;
 }
 
 .active {
