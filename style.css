@@ -264,23 +264,27 @@ p {
 #cards {
     display: flex;
     flex-wrap: wrap;
-    max-width: 940px;
+    max-width: 1328px;
     width: calc(100% - 20px);
-    gap: 16px;
+    gap: 40px;
 }
 
 .card {
     height: 260px;
     width: 300px;
-    background-color: #27212122;
+    background-color: #27212133;
     border-radius: 10px;
     border: 1px solid #27212177;
     cursor: pointer;
     position: relative;
 }
 
+.card:hover::before{
+    opacity: 1;
+}
+
 .card::before {
-    background: radial-gradient(800px circle at 100px 100px,
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
             var(--accent-faded),
             transparent 40%);
     height: 100%;
@@ -291,4 +295,6 @@ p {
     border-radius: inherit;
     content: "";
     z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
