@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #040303;
-    --secondary-color: #461111;
-    --accent-color: #B3541E;
+    --primary-color: #272121;
+    --secondary-color: #443737;
+    --accent-color: #FF4D00;
 }
 
 body {
@@ -19,7 +19,7 @@ footer {
     background-color: var(--primary-color);
     margin: 0;
     padding: 18px;
-    color: #ddd;
+    color: #bbb;
 }
 
 a {
