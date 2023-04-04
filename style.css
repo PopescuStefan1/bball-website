@@ -44,8 +44,7 @@ p {
 
 .header a {
     color: white;
-    transition: 0.3s;
-    transition-timing-function: ease-in-out;
+    transition: 0.3s ease;
 }
 
 .header a:hover {
@@ -73,14 +72,14 @@ p {
 
 .navbar-list li {
     float: left;
+    transition: 0.4s ease;
 }
 
 .navbar-list li a {
     display: block;
     padding: 12px;
     font-size: 20px;
-    transition: 0.3s;
-    transition-timing-function: ease-in-out;
+    transition: 0.4s ease;
     color: white;
 }
 
@@ -93,8 +92,16 @@ p {
     border-top: 2px solid var(--accent-color);
 }
 
-.navbar-list:has(a:not(.active):hover) li .active {
+/* .navbar-list:has(a:not(.active):hover) li .active {
     border-top: 2px solid var(--accent-color-semi-transparent);
+} */
+
+.navbar-list:hover>li {
+    opacity: 0.5;
+}
+
+.navbar-list>li:hover {
+    opacity: 1;
 }
 
 .active {
