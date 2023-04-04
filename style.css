@@ -277,6 +277,11 @@ p {
     border: 1px solid #272121;
     cursor: pointer;
     position: relative;
+    transition: 350ms ease;
+}
+
+.card:hover{
+    transform: scale(1.08, 1.08);
 }
 
 .card:hover::before {
