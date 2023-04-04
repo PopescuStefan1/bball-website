@@ -81,8 +81,13 @@ p {
     color: white;
 }
 
-.navbar-list li a:hover:not(.active) {
+.navbar-list li a:not(.active) {
+    border-top: 2px solid transparent;
+}
+
+.navbar-list li a:hover {
     background-color: var(--secondary-color);
+    border-top: 2px solid var(--accent-color);
 }
 
 .active {
