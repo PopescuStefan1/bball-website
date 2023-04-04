@@ -31,13 +31,15 @@ function myFunction() {
     scrollIndicator();
 }
 
-// Fill and unfill scrollbar
+// Fill and unfill scrollbar and parallax backgrounds
 function scrollIndicator() {
+    // Fill scrollbar
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     document.getElementById('scrollbar').style.width = scrolled + "%";
 
+    // Scroll parallax backgrounds
     const parallaxes = document.querySelectorAll('.parallax');
     for (const parallax of parallaxes) {
         if (parallax.classList.contains('first-par')) {

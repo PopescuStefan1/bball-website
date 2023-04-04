@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #272121;
-    --secondary-color: #443737;
+    --primary-color: #443737;
+    --secondary-color: #272121;
     --accent-color: #ff4d00;
     --accent-color-semi-transparent: #ff4d0088;
 }
@@ -17,7 +17,7 @@ html {
 
 footer {
     text-align: center;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     margin: 0;
     padding: 18px;
     color: #bbb;
@@ -33,7 +33,7 @@ p {
 
 .header {
     height: 100px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: #B16713;
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@ p {
 }
 
 .navbar-list-div {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 0;
 }
 
@@ -89,7 +89,7 @@ p {
 }
 
 .navbar-list li a:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     border-top: 2px solid var(--accent-color);
 }
 
@@ -154,7 +154,7 @@ p {
 }
 
 .home-text {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     font-size: 40px;
     font-weight: 500;
     padding: 240px 340px;
@@ -167,4 +167,9 @@ p {
 
 .home-arrow {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+.placeholder {
+    height: 2000px;
+    background-color: var(--primary-color);
 }
