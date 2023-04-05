@@ -48,6 +48,29 @@ p {
     transition: 0.3s ease;
 }
 
+/* @keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}
+
+.header a:hover {
+    color: var(--accent-color);
+    background: linear-gradient(to right,
+            var(--accent-color),
+            #ffcd00,
+            #ff0033,
+            var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: background-pan 3s linear infinite;
+} */
+
 .header a:hover {
     color: var(--accent-color);
 }
@@ -75,29 +98,35 @@ p {
 
 .navbar-list li {
     float: left;
-    transition: 0.4s ease;
+    transition: 0.5s ease;
 }
 
 .navbar-list li a {
     display: block;
     padding: 12px;
     font-size: 20px;
-    transition: 0.4s ease;
     color: white;
+    position: relative;
 }
 
-.navbar-list li a:not(.active) {
-    border-top: 2px solid transparent;
+.navbar-list li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: var(--accent-color);
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+    transform-origin: right;
 }
 
-.navbar-list li a:hover {
-    background-color: var(--primary-color);
-    border-top: 2px solid var(--accent-color);
+.navbar-list li a:not(.active):hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
-
-/* .navbar-list:has(a:not(.active):hover) li .active {
-    border-top: 2px solid var(--accent-color-semi-transparent);
-} */
 
 .navbar-list:hover>li {
     opacity: 0.5;
@@ -280,7 +309,7 @@ p {
     transition: 350ms ease;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.08, 1.08);
 }
 
