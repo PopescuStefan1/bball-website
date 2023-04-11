@@ -300,17 +300,23 @@ p {
 
 .card {
     height: 260px;
-    width: 300px;
+    width: 260px;
     background-color: #27212199;
     border-radius: 10px;
     border: 1px solid #272121;
     cursor: pointer;
     position: relative;
     transition: 350ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #bbb;
+    padding: 1rem;
 }
 
 .card:hover {
     transform: scale(1.08, 1.08);
+    color: #fff;
 }
 
 .card:hover::before {
@@ -352,4 +358,23 @@ p {
 .card:hover::after {
     top: 15%;
     opacity: 1;
+}
+
+.teams {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.teams img {
+    height: 20px;
+    margin-right: 4px;
+}
+
+.match-date {
+    flex-grow: 1;
+    text-align: center;
 }
