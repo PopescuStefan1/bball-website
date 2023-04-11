@@ -9,15 +9,20 @@ headerLink.onmouseover = function () { ballBounce() };
 headerLink.onmouseleave = function () { ballStopBounce() };
 
 // Adds bounce on hover
+
 function ballBounce() {
-    balls = headerLink.children;
-    balls[0].classList.add("fa-bounce");
-    balls[1].classList.add("fa-bounce");
+    setTimeout(function () {
+        balls = headerLink.children;
+        balls[0].classList.add("fa-bounce");
+        balls[1].classList.add("fa-bounce");
+    }, 150);
 }
 function ballStopBounce() {
-    balls = headerLink.children;
-    balls[0].classList.remove("fa-bounce");
-    balls[1].classList.remove("fa-bounce");
+    setTimeout(function () {
+        balls = headerLink.children;
+        balls[0].classList.remove("fa-bounce");
+        balls[1].classList.remove("fa-bounce");
+    }, 150)
 }
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
