@@ -45,7 +45,7 @@ p {
 
 .header a {
     color: white;
-    transition: 0.3s ease;
+    transition: 0.15s ease-in;
 }
 
 /* @keyframes background-pan {
@@ -183,11 +183,11 @@ p {
 }
 
 .first-par {
-    background-image: url('pexels-spencer-lind-1331750.jpg');
+    background-image: url('img/pexels-spencer-lind-1331750.jpg');
 }
 
 .second-par {
-    background-image: url('joshua-kantarges-N_7Kb4hpaoU-unsplash.jpg');
+    background-image: url('img/joshua-kantarges-N_7Kb4hpaoU-unsplash.jpg');
 }
 
 .empty {
