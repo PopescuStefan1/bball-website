@@ -365,12 +365,13 @@ p {
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    justify-content: space-evenly;
     gap: 1rem;
     padding-left: 1rem;
 }
 
 .teams img {
-    width: 30px;
+    width: 2rem;
 }
 
 .teams > div{
