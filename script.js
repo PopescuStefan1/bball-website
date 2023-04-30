@@ -100,12 +100,18 @@ for (let index = 0; index < images.length; index++) {
   backgroundsUrl[index] = window
     .getComputedStyle(images[index])
     .backgroundImage.slice(5, -2);
-    images[index].addEventListener(
-      "click",
-      function () {
-        fullImgDiv.style.display = "flex";
-        fullImg.src = backgroundsUrl[index];
-      },
-      false
-    );
+  images[index].addEventListener(
+    "click",
+    function () {
+      fullImgDiv.style.display = "flex";
+      fullImg.src = backgroundsUrl[index];
+    },
+    false
+  );
 }
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    fullImgDiv.style.display = "none";
+  }
+});
