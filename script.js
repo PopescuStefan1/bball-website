@@ -7,12 +7,14 @@ var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
 const headerLink = document.querySelector(".header > a");
-headerLink.onmouseover = function () {
-  ballBounce();
-};
-headerLink.onmouseleave = function () {
-  ballStopBounce();
-};
+if (headerLink !== null) {
+  headerLink.onmouseover = function () {
+    ballBounce();
+  };
+  headerLink.onmouseleave = function () {
+    ballStopBounce();
+  };
+}
 
 // Adds bounce on hover
 
