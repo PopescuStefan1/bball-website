@@ -79,3 +79,33 @@ const handleOnMouseMove = (e) => {
 for (const card of document.querySelectorAll(".card")) {
   card.onmousemove = (e) => handleOnMouseMove(e);
 }
+
+// Open and close image gallery
+const fullImgDiv = document.getElementById("fullImgDiv");
+
+const closeButton = document.getElementById("closeButton");
+closeButton.addEventListener(
+  "click",
+  function () {
+    fullImgDiv.style.display = "none";
+  },
+  false
+);
+
+const images = document.getElementsByClassName("picture-child");
+const fullImg = document.getElementById("fullImg");
+const backgroundsUrl = [];
+
+for (let index = 0; index < images.length; index++) {
+  backgroundsUrl[index] = window
+    .getComputedStyle(images[index])
+    .backgroundImage.slice(5, -2);
+    images[index].addEventListener(
+      "click",
+      function () {
+        fullImgDiv.style.display = "flex";
+        fullImg.src = backgroundsUrl[index];
+      },
+      false
+    );
+}
