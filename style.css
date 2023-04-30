@@ -381,3 +381,77 @@ p {
   flex-grow: 1;
   text-align: center;
 }
+
+.images-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images-grid {
+  height: 80%;
+  aspect-ratio: 4/3;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.picture-parent {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.picture-child {
+  opacity: 0.8;
+  transition: 0.4s ease-in-out;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.picture-child:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.grid-row-span-2 {
+  grid-row: span 2;
+}
+
+.images-grid :nth-child(1) div {
+  background-image: url(https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2090&q=80);
+  background-position: center;
+}
+
+.images-grid :nth-child(2) div {
+  background-image: url(https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+
+.images-grid :nth-child(3) div {
+  background-image: url(https://images.unsplash.com/photo-1519861531473-9200262188bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80);
+  background-position: center;
+}
+
+.images-grid :nth-child(4) div {
+  background-image: url(https://images.unsplash.com/photo-1580692475446-c2fabbbbf835?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+
+.images-grid :nth-child(5) div {
+  background-image: url(https://images.unsplash.com/photo-1515523110800-9415d13b84a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  background-position: center;
+}
+
+.images-grid :nth-child(6) div {
+  background-image: url(https://images.unsplash.com/photo-1579487685737-e435a87b2518?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+
+.images-grid :nth-child(7) div {
+  background-image: url(https://images.unsplash.com/flagged/photo-1577416336755-0b86c3e4f1d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80);
+  background-position: center;
+}
