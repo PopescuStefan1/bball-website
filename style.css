@@ -504,9 +504,9 @@ p {
     width: 20%;
     display: flex;
     flex-direction: column;
-    gap: 3.5rem;
+    gap: 1rem;
     align-items: end;
-    padding-top: 4.5rem;
+    padding-top: 3.5rem;
     box-sizing: border-box;
     padding-right: 0.5rem;
 }
@@ -518,9 +518,26 @@ p {
     background-size: cover;
 }
 
+.stat {
+    display: flex;
+    color: white;
+    transform: translateX(208px);
+}
+
 .stat-name {
     rotate: -90deg;
-    color: white;
     font-weight: 500;
     font-size: 24px;
+}
+
+.stat-number-div {
+    font-weight: 700;
+    font-size: 36px;
+    background: linear-gradient(90deg, #552583 0%, rgba(85, 37, 131, 0) 100%);
+    width: 200px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
 }
