@@ -500,7 +500,7 @@ p {
 
 .player-stats {
     background-color: var(--secondary-color);
-    height: 80%;
+    height: 85%;
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -513,7 +513,7 @@ p {
 
 .player-image {
     flex-grow: 1;
-    height: 80%;
+    height: 85%;
     background-image: url(https://cdn.nba.com/manage/2023/04/lebron-driving-1568x882.jpg);
     background-size: cover;
 }
