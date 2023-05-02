@@ -490,7 +490,7 @@ p {
     height: 80%;
 }
 
-.player-content{
+.player-content {
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -502,6 +502,12 @@ p {
     background-color: var(--secondary-color);
     height: 80%;
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    align-items: end;
+    padding-top: 4.5rem;
+    box-sizing: border-box;
 }
 
 .player-image {
@@ -509,4 +515,11 @@ p {
     height: 80%;
     background-image: url(https://cdn.nba.com/manage/2023/04/lebron-driving-1568x882.jpg);
     background-size: cover;
+}
+
+.stat-name {
+    rotate: -90deg;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
 }
