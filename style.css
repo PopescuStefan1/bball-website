@@ -508,6 +508,7 @@ p {
     align-items: end;
     padding-top: 4.5rem;
     box-sizing: border-box;
+    padding-right: 0.5rem;
 }
 
 .player-image {
