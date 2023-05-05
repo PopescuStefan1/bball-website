@@ -84,13 +84,15 @@ for (const card of document.querySelectorAll(".card")) {
 const fullImgDiv = document.getElementById("fullImgDiv");
 
 const closeButton = document.getElementById("closeButton");
-closeButton.addEventListener(
-  "click",
-  function () {
-    fullImgDiv.style.display = "none";
-  },
-  false
-);
+if (closeButton != null) {
+  closeButton.addEventListener(
+    "click",
+    function () {
+      fullImgDiv.style.display = "none";
+    },
+    false
+  );
+}
 
 const images = document.getElementsByClassName("picture-child");
 const fullImg = document.getElementById("fullImg");
@@ -115,3 +117,14 @@ document.addEventListener("keydown", function (event) {
     fullImgDiv.style.display = "none";
   }
 });
+
+const playerImage = document.getElementById("playerImage");
+const playerSpotlight = document.getElementById("playerSpotlightDiv");
+const playerStats = document.getElementById;
+
+if (playerImage != null) {
+  playerImage.addEventListener("click", function () {
+    playerImage.style.flexGrow = "0";
+    playerSpotlight.style.display = "none";
+  });
+}
