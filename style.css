@@ -516,6 +516,7 @@ p {
     height: 85%;
     background-image: url(https://cdn.nba.com/manage/2023/04/lebron-driving-1568x882.jpg);
     background-size: cover;
+    min-width: 200px;
 }
 
 .stat {
@@ -540,4 +541,56 @@ p {
     align-items: center;
     padding-left: 1.5rem;
     box-sizing: border-box;
+}
+
+.player-spotlight-div {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    height: 20%;
+    margin-top: 43%;
+}
+
+.player-spotlight-gradient {
+    background: linear-gradient(90deg, rgba(253, 185, 39, 0.3) 0%, rgba(253, 185, 39, 0.75) 45.32%, rgba(253, 185, 39, 0.3) 100%);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    max-height: 135px;
+    gap: 1.5rem;
+}
+
+.player-spotlight-logo {
+    height: 8rem;
+}
+
+.player-spotlight-line {
+    height: 16rem;
+    background-color: #fff;
+    width: 3px;
+}
+
+.player-spotlight-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-name {
+    flex-grow: 1;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.l-name {
+    flex-grow: 2;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.potw-text {
+    font-weight: 500;
+    font-size: 1.5rem;
+    transform: translateX(290px);
+    margin-top: 0.5rem;
 }
