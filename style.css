@@ -518,7 +518,8 @@ p {
   height: 85%;
   background-image: url(https://cdn.nba.com/manage/2023/04/lebron-driving-1568x882.jpg);
   background-size: cover;
-  min-width: 200px;
+  background-position: center;
+  min-width: 500px;
 }
 
 .stat {
