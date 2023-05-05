@@ -513,7 +513,7 @@ p {
   padding-top: 3.5rem;
   box-sizing: border-box;
   padding-right: 0.5rem;
-  transition: 1s ease-in-out;
+  transition: 0s ease-in-out;
 }
 
 .player-image {
@@ -523,7 +523,7 @@ p {
   background-size: cover;
   background-position: center;
   min-width: 20%;
-  transition: 1s ease-in-out;
+  transition: 0s ease-in-out;
 }
 
 .stat {
@@ -556,7 +556,7 @@ p {
   color: #fff;
   height: 20%;
   margin-top: 43%;
-  transition: 1s ease-in-out;
+  transition: 0s ease-in-out;
 }
 
 .player-spotlight-gradient {
