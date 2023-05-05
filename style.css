@@ -278,6 +278,7 @@ p {
   background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .matches-content {
@@ -498,6 +499,7 @@ p {
   align-items: center;
   justify-content: center;
   padding: 0% 15%;
+  box-sizing: border-box;
 }
 
 .player-stats {
@@ -511,6 +513,7 @@ p {
   padding-top: 3.5rem;
   box-sizing: border-box;
   padding-right: 0.5rem;
+  transition: 1s ease-in-out;
 }
 
 .player-image {
@@ -519,7 +522,8 @@ p {
   background-image: url(https://cdn.nba.com/manage/2023/04/lebron-driving-1568x882.jpg);
   background-size: cover;
   background-position: center;
-  min-width: 500px;
+  min-width: 20%;
+  transition: 1s ease-in-out;
 }
 
 .stat {
@@ -552,6 +556,7 @@ p {
   color: #fff;
   height: 20%;
   margin-top: 43%;
+  transition: 1s ease-in-out;
 }
 
 .player-spotlight-gradient {

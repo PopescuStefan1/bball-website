@@ -121,11 +121,28 @@ document.addEventListener("keydown", function (event) {
 const playerImage = document.getElementById("playerImage");
 const playerSpotlight = document.getElementById("playerSpotlightDiv");
 const playerStats = document.getElementById("playerStats");
+let closed = 1;
 
 if (playerImage != null) {
   playerImage.addEventListener("click", function () {
-    playerImage.style.flexGrow = "0";
-    playerSpotlight.style.display = "none";
-    playerStats.style.display = "none";
+    if (closed) {
+      playerImage.style.flexGrow = "1";
+      playerImage.style.height = "85%";
+      playerImage.style.cursor = "default";
+      playerSpotlight.style.opacity = "1";
+      playerStats.style.width = "20%";
+      playerStats.style.opacity = "1";
+      playerStats.style.height = "85%";
+      closed = !closed;
+    } else {
+      playerImage.style.flexGrow = "0";
+      playerImage.style.height = "70%";
+      playerImage.style.cursor = "pointer";
+      playerSpotlight.style.opacity = "0";
+      playerStats.style.width = "0%";
+      playerStats.style.opacity = "0";
+      playerStats.style.height = "70%";
+      closed = !closed;
+    }
   });
 }
