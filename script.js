@@ -142,6 +142,7 @@ setTimeout(() => {
 if (playerImage != null) {
   playerImage.addEventListener("click", function () {
     if (closed) {
+      playerImage.classList.remove("unopened");
       playerImage.style.flexGrow = "1";
       playerImage.style.height = "85%";
       playerImage.style.zIndex = "auto";
@@ -152,6 +153,7 @@ if (playerImage != null) {
       playerStats.style.height = "85%";
       closed = !closed;
     } else {
+      playerImage.classList.add("unopened");
       playerImage.style.flexGrow = "0";
       playerImage.style.height = "70%";
       playerImage.style.cursor = "pointer";

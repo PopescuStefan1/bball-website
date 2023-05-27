@@ -602,3 +602,29 @@ p {
   transform: translateX(290px);
   margin-top: 0.5rem;
 }
+
+.unopened {
+  opacity: 0.6;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s ease-in-out !important;
+}
+
+.unopened:hover {
+  opacity: 1;
+}
+
+.unopened::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  transition: 0.5s ease-in-out;
+}
+
+.unopened:hover::before {
+  left: -100%;
+}
