@@ -413,7 +413,7 @@ p {
 }
 
 .picture-child:hover {
-  transform: rotate(12deg) scale(1.2);
+  transform: scale(1.2);
   opacity: 1;
 }
 
@@ -457,14 +457,9 @@ p {
   background-position: center;
 }
 
-.images-grid :nth-child(1) div:hover,
-.images-grid :nth-child(4) div:hover,
-.images-grid :nth-child(6) div:hover {
-  transform: rotate(-12deg) scale(1.2);
-}
-
-.images-grid :nth-child(7) div:hover {
-  transform: rotate (-6deg) scale(1.2);
+.images-grid :nth-child(3) div:hover,
+.images-grid :nth-child(5) div:hover {
+  transform: rotate(12deg) scale(1.2);
 }
 
 .full-img-div {
