@@ -628,3 +628,23 @@ p {
 .unopened:hover::before {
   left: -100%;
 }
+
+.about-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding: 5% 35%;
+}
+
+.about-text-container {
+  background-color: var(--secondary-color);
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
