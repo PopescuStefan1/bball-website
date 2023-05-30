@@ -78,6 +78,7 @@ const handleOnMouseMove = (e) => {
 
 for (const card of document.querySelectorAll(".card")) {
   card.onmousemove = (e) => handleOnMouseMove(e);
+  card.onclick = () => showForm();
 }
 
 // Open and close image gallery
@@ -172,3 +173,8 @@ if (playerImage !== null && playerStats !== null && playerSpotlight !== null) {
 }
 
 const ticketForm = document.getElementById("ticketWindow");
+if (ticketForm !== null) {
+  function showForm() {
+    ticketForm.style.display = "flex";
+  }
+}
