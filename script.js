@@ -171,3 +171,4 @@ if (playerImage !== null && playerStats !== null && playerSpotlight !== null) {
   }
 }
 
+const ticketForm = document.getElementById("ticketWindow");

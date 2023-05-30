@@ -383,7 +383,7 @@ p {
   text-align: center;
 }
 
-#ticket-window {
+#ticketWindow {
   background-color: var(--secondary-color);
   position: absolute;
   z-index: 2;
