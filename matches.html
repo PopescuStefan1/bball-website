@@ -186,22 +186,20 @@
         </div>
       </div>
 
-      <div id="ticket-window">
+      <form id="ticket-window">
         <div class="tickets-title">
           <p>Buy Tickets</p>
         </div>
-        <form>
-          <div class="tickets-row-div">
-            <label for="rows">Row</label>
-            <input type="text" id="rows" name="rows">
-          </div>
-          <div class="tickets-col-div">
-            <label for="cols">Column</label>
-            <input type="text" id="cols" name="cols">
-          </div>
-          <input type="submit" value="Buy Now">
-        </form>
-      </div>
+        <div class="tickets-row-div">
+          <label for="rows" class="row-name">Row</label>
+          <input class="row-number" type="number" id="rows" name="rows" min="1" max="50" />
+        </div>
+        <div class="tickets-row-div">
+          <label for="cols" class="row-name">Column</label>
+          <input class="row-number" type="number" id="cols" name="cols" min="1" max="200" />
+        </div>
+        <input class="tickets-button" type="submit" value="Buy Now" />
+      </form>
     </div>
 
     <footer>

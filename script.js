@@ -170,3 +170,4 @@ if (playerImage !== null && playerStats !== null && playerSpotlight !== null) {
     });
   }
 }
+
