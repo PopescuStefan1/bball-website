@@ -124,47 +124,49 @@ const playerStats = document.getElementById("playerStats");
 let closed = 1;
 
 // Init player spotlight image
-playerImage.style.flexGrow = "0";
-playerImage.style.height = "70%";
-playerImage.style.cursor = "pointer";
-playerSpotlight.style.opacity = "0";
-playerStats.style.width = "0%";
-playerStats.style.opacity = "0";
-playerStats.style.height = "70%";
-playerImage.style.zIndex = "2";
-setTimeout(() => {
-  playerImage.style.transition = "1s";
-  playerSpotlight.style.transition = "1s";
-  playerStats.style.transition = "1s";
-}, 10);
+if (playerImage !== null && playerStats !== null && playerSpotlight !== null) {
+  playerImage.style.flexGrow = "0";
+  playerImage.style.height = "70%";
+  playerImage.style.cursor = "pointer";
+  playerSpotlight.style.opacity = "0";
+  playerStats.style.width = "0%";
+  playerStats.style.opacity = "0";
+  playerStats.style.height = "70%";
+  playerImage.style.zIndex = "2";
+  setTimeout(() => {
+    playerImage.style.transition = "1s";
+    playerSpotlight.style.transition = "1s";
+    playerStats.style.transition = "1s";
+  }, 10);
 
-// Player spotlight animation
-if (playerImage != null) {
-  playerImage.addEventListener("click", function () {
-    if (closed) {
-      playerImage.classList.remove("unopened");
-      playerImage.style.flexGrow = "1";
-      playerImage.style.height = "85%";
-      playerImage.style.zIndex = "auto";
-      playerImage.style.cursor = "default";
-      playerSpotlight.style.opacity = "1";
-      playerStats.style.width = "20%";
-      playerStats.style.opacity = "1";
-      playerStats.style.height = "85%";
-      closed = !closed;
-    } else {
-      playerImage.classList.add("unopened");
-      playerImage.style.flexGrow = "0";
-      playerImage.style.height = "70%";
-      playerImage.style.cursor = "pointer";
-      playerSpotlight.style.opacity = "0";
-      playerStats.style.width = "0%";
-      playerStats.style.opacity = "0";
-      playerStats.style.height = "70%";
-      setTimeout(() => {
-        playerImage.style.zIndex = "2";
-      }, 1000);
-      closed = !closed;
-    }
-  });
+  // Player spotlight animation
+  if (playerImage != null) {
+    playerImage.addEventListener("click", function () {
+      if (closed) {
+        playerImage.classList.remove("unopened");
+        playerImage.style.flexGrow = "1";
+        playerImage.style.height = "85%";
+        playerImage.style.zIndex = "auto";
+        playerImage.style.cursor = "default";
+        playerSpotlight.style.opacity = "1";
+        playerStats.style.width = "20%";
+        playerStats.style.opacity = "1";
+        playerStats.style.height = "85%";
+        closed = !closed;
+      } else {
+        playerImage.classList.add("unopened");
+        playerImage.style.flexGrow = "0";
+        playerImage.style.height = "70%";
+        playerImage.style.cursor = "pointer";
+        playerSpotlight.style.opacity = "0";
+        playerStats.style.width = "0%";
+        playerStats.style.opacity = "0";
+        playerStats.style.height = "70%";
+        setTimeout(() => {
+          playerImage.style.zIndex = "2";
+        }, 1000);
+        closed = !closed;
+      }
+    });
+  }
 }
