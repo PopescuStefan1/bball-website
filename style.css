@@ -383,6 +383,45 @@ p {
   text-align: center;
 }
 
+#ticket-window {
+  background-color: var(--secondary-color);
+  position: absolute;
+  z-index: 2;
+  height: 40rem;
+  aspect-ratio: 18/25;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tickets-title {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 12%;
+  border-radius: 25px;
+}
+
+.tickets-title p{
+  font-size: 2.5rem;
+  color: white;
+}
+
+.tickets-row-div {
+  background-color: var(--primary-color);
+}
+
+.tickets-col-div {
+  background-color: var(--primary-color);
+}
+
+.tickets-button {
+  background-color: var(--accent-color);
+}
+
 .images-content {
   flex-grow: 1;
   display: flex;
