@@ -186,7 +186,7 @@
         </div>
       </div>
 
-      <form id="ticketWindow">
+      <form id="ticketWindow" action="connect.php" method="post">
         <div class="tickets-title">
           <p>Buy Tickets</p>
         </div>
@@ -199,6 +199,7 @@
             name="rows"
             min="1"
             max="50"
+            required
           />
         </div>
         <div class="tickets-row-div">
@@ -210,6 +211,7 @@
             name="cols"
             min="1"
             max="200"
+            required
           />
         </div>
         <input class="tickets-button" type="submit" value="Buy Now" />
