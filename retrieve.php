@@ -7,7 +7,7 @@ if (isset($_POST["submit"])) {
     $sql = "SELECT * FROM `seats` WHERE `Row` = ? AND `Seat_No` = ?;";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("location: matches.html?error=stmtfailed");
+        header("location: matches.php?error=stmtfailed");
         exit();
     }
 
@@ -21,14 +21,14 @@ if (isset($_POST["submit"])) {
 
     if ($row = mysqli_fetch_assoc($resultData)) {
         if ($row["taken"] === 0) {
-            header("location: matches.html?result=bought");
+            header("location: matches.php?result=bought");
         } else {
-            header("location: matches.html?result=error:seatTaken");
+            header("location: matches.php?result=error:seatTaken");
         }
     }
 
     mysqli_stmt_close($stmt);
     exit();
 } else {
-    header("location: matches.html");
+    header("location: matches.php");
 }
