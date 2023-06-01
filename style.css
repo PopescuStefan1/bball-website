@@ -287,6 +287,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 4rem;
 }
 
 #cards {
@@ -464,6 +465,11 @@ p {
   background-color: var(--accent-color);
   color: #fff;
   transform: scale(1.02);
+}
+
+.ticket-result {
+  color: var(--accent-color);
+  font-size: 2rem;
 }
 
 .images-content {

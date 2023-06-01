@@ -146,7 +146,7 @@
       </div>
     </div>
 
-    <form id="ticketWindow" action="retrieve.php" method="post">
+    <form id="ticketWindow" action="buy.php" method="post">
       <div class="tickets-title">
         <p>Buy Tickets</p>
       </div>
@@ -163,7 +163,9 @@
 
     <?php
     if ($_GET["result"] == "bought") {
-      echo "<p>asdf</p>";
+      echo "<p class = 'ticket-result'>You bought the ticket!</p>";
+    } else if ($_GET["result"] == "error:seatTaken") {
+      echo "<p class = 'ticket-result' style='color: red;'>Error: Seat is already taken!</p>";
     }
     ?>
   </div>
