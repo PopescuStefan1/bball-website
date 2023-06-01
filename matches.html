@@ -24,7 +24,7 @@
       <div class="navbar-list-div">
         <ul class="navbar-list">
           <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="matches.php">Matches</a></li>
+          <li><a class="active" href="matches.html">Matches</a></li>
           <li><a href="images.html">Images</a></li>
           <li><a href="player.html">Player of the Week</a></li>
           <li><a href="about.html">About</a></li>
@@ -186,7 +186,7 @@
         </div>
       </div>
 
-      <form id="ticketWindow" method="post">
+      <form action="retrieve.php" id="ticketWindow" method="post">
         <div class="tickets-title">
           <p>Buy Tickets</p>
         </div>
@@ -198,7 +198,7 @@
             id="rows"
             name="rows"
             min="1"
-            max="50"
+            max="3"
             required
           />
         </div>
@@ -210,7 +210,7 @@
             id="seat"
             name="seat"
             min="1"
-            max="200"
+            max="5"
             required
           />
         </div>
