@@ -720,15 +720,20 @@ p {
 
 .about-content {
   flex-grow: 1;
+  flex-shrink: 1;
   display: flex;
   justify-content: center;
-  padding: 5% 35%;
+  align-items: center;
+  padding: 0% 35%;
+  box-sizing: border-box;
 }
 
 .about-text-container {
   background-color: var(--secondary-color);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #fff;
+  flex-grow: 1;
+  flex-shrink: 1;
   padding: 4rem;
   border-radius: 1rem;
   display: flex;
