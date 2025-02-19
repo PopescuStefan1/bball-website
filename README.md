@@ -5,7 +5,7 @@ A simple HTML, CSS JavaScript & PHP basketball-related website built during my b
 
 ![image](https://github.com/user-attachments/assets/e476447e-636e-43d8-bd6d-1d6ef50a833d)
 
-# Matches Cards Page
+# Matches Page
 ![image](https://github.com/user-attachments/assets/b4165560-a6db-47f0-8d66-03483890b159)
 
 # Images Page
