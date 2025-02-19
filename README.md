@@ -1,4 +1,4 @@
-A simple HTML, CSS & PHP basketball-related website built during my bachelor's degree.
+A simple HTML, CSS JavaScript & PHP basketball-related website built during my bachelor's degree.
 
 # Main Page
 ![image](https://github.com/user-attachments/assets/c3f88791-3ae3-4cbd-872c-d8c4e694e910)
